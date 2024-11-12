@@ -1,0 +1,81 @@
+1.1
+pregunta 1:
+si, se necesita persistencia para saber la disponibilidad de las habitaciones.
+pregunta 2:
+si, puede usarse un diccionario donde se puede acceder a la habitacion por la disponibilidad.
+
+1.2
+pregunta 1:
+si, es necesario persistir los datos de los empleados.
+pregunta 2:
+No, usaria una lista ya que los empleados se van modificando.
+
+1.3
+pregunta 1:
+No es necesario guardar los datos de los pedidos.
+pregunta 2:
+si, es útil usar Enums ya que los datos son fijos.
+
+1.4
+pregunta 1:
+si, es necesario guardar los datos de los pacientes.
+pregunta 2:
+Usaría una cola ya que responde a FIFO.
+
+EJERCICIO 2.
+2.1
+RELACION ENTRE RESTAURANTE Y PEDIDO: Asociación
+RELACION ENTRE PEDIDO Y PRODUCTO: Agregación
+RELACION ENTRE RESTAURANTE Y EMPLEADO: Agregación
+
+2.2
+RELACION ENTRE BIBLIOTECA Y COLECCION: Composición
+RELACION ENTRE COLECCION Y LIBRO: Agregación
+RELACION ENTRE BIBLIOTECA Y USUARIO: Bidireccional
+
+2.3
+RELACION ENTRE ESCUELA Y CURSO: Composición
+RELACION ENTRE CURSO Y ESTUDIANTE: Agregación
+RELACION ENTRE CURSO Y PROFESOR: Agregación
+
+2.4
+1. TipoProducto : producto
+2. NumeroPedido: int
+3. Enums
+4. MostrarInventario(): void
+5. ActualizarInventario(): void y SumarVentas(): void
+
+2.5
+1. NombreDueño: string
+2. Especie : TipoEspecie
+3. Paciente : paciente
+4. ListarConsultaVeterinario(consulta consulta): void
+5. ListarPacientes(Paciente paciente): void 
+ y ListarPropietarios(Propietarios propietario): void
+
+2.6
+1. EjemplaresDisponibles: int
+2. ReservaLibro : Reserva
+3. LibroDisponible: bool
+4. DevolverLibro(libro Libro): void
+5. MostrarLibrosDisponibles(CatalogoLibros libro): void
+
+3. PREGUNTAS TEORICAS
+1. El encapsulamiento es reunir todos los elementos que pueden considerarse pertenecientes
+a una misma entidad. Todo lo relacionado en un mismo objeto, aparece en estado de 
+ocultamiento, que establece que cada objeto esta aislado del exterior. Este aislamiento
+protege a las propiedades de un objeto contra su modificacion por quien no tenga derecho a 
+acceder a ellas, solo los propios metodos internos del objeto.
+
+2. La herencia es una clase padre que hereda las propiedades y el comportamiento a las
+clases hijas. La herencia organiza y facilita el polimorfismo y el encapsulamiento,
+permitiendo a los objetos ser definidos y creados como tipos especializados de clases
+preexistentes. Estos pueden compartir su comportamiento sin tener que volver a imlementarlo.
+
+3. Comportamientos diferentes, asociados a objetos distintos, pueden compartir el mismo nombre; al llamarlos
+por ese nombre se utilizara el comportamiento correspondiente al objeto que se esta usando.
+
+4. Una interfaz es un contrato o conjunto de metodos que una clase debe implementar. Se usan para asegurar
+que las clases que las implementan proporcionen ciertos comportamientos, pero dejando abierta la implementacion
+concreta. Solo se declaran metodos.
+Una clase abstracta puede tener metodos con implementacion, mientras que una interfaz solo puede declarar metodos.
